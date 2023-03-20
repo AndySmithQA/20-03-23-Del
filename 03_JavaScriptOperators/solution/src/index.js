@@ -14,12 +14,12 @@
 // Relational Operators
 // console.log(5 > 3);
 // console.log(3 != 3);
-// console.log(3 <= 2 && 5 >2);
+// console.log(3 <= 2 && 5 > 2);
 // console.log(!5>3);
 
 // Mismatched Types
 // console.log(5 + "5");
-// console.log(5 + true);
+//console.log(5 + true);
 // console.log(5 * "5");
 // console.log(1 == true);
 // console.log(1 === true);

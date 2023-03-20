@@ -66,3 +66,4 @@ console.log(`5 + 3 is ${5 + 3}`)
 console.log(names.indexOf("l"))
 
 console.log(Number.MAX_VALUE)
+//console.log(Number.MIN_VALUE)

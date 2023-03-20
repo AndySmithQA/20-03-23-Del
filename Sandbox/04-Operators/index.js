@@ -109,3 +109,7 @@
 // let s = 5;
 // console.log(!isNaN(s))
 
+// console.log(typeof 96)
+// console.log(typeof "Hello")
+
+console.log(5 + true);
