@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error{
+            padding: 10px;
+            color: crimson;
+            border: 1px dotted crimson
+        }
+        .success{
+            padding: 10px;
+            color: limegreen;
+            border: 1px dotted limegreen
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <h1 style="color: orange;">JavaScript and Styles</h1>
+
+    <a href="http://www.google.co.uk">Link to Somewhere....</a>
+
+    <p class="error">Lorem Ipsem</p> -->
+
+    <h1 class="title">The Dom</h1>
+
+    <p style="display: none;">Lorem Ipsem</p>
+
+   
+    <p>Lorem success Ipsem</p>
+    <p>Lorem success Ipsem</p>
+    <p>Lorem error Ipsem</p>
+    <p>Lorem success Ipsem</p>
+    <p>Lorem success Ipsem</p>
+    <p>Lorem error Ipsem</p>
+    <p>Lorem success Ipsem</p>
+
+    <script>
+        const paras = document.querySelectorAll('p');
+
+        paras.forEach(p =>{
+            if(p.textContent.includes('error')){
+                p.classList.add('error')
+            }   
+            if(p.textContent.includes('success')){
+                p.classList.add('success')
+            }
+        })
+    </script>
+</body>
+</html>
