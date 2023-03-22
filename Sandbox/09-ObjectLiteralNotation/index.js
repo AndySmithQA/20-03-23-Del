@@ -77,3 +77,13 @@
 let myObject = {first: "Salt", second: "Pepper"};
 let {first,second} = myObject;
 document.write(first)
+
+let car = {
+    make: "Skoda",
+    col: "green",
+    eng: 2
+}
+
+let myMake = car.make
+let myCol = car.col
+console.log(myMake)
