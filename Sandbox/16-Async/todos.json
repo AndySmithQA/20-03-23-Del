@@ -1,0 +1,21 @@
+{
+"todos":[
+
+    { 
+        "text": "Write Code", 
+        "author": "Andy"
+    },
+    { 
+        "text": "buy bread", 
+        "author": "Dave"
+    },
+    { 
+        "text": "Run", 
+        "author": "Frank"
+    },
+    { 
+        "text": "Dream", 
+        "author": "John"
+    }
+]
+}

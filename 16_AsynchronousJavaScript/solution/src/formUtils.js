@@ -9,26 +9,25 @@ const prepareResultForSubmit = formData => {
 };
 
 // Fetch
-const submitResult = result => {
+const submitResult = async result => {
   let resultToSubmit = JSON.stringify(result);
-  return fetch(resultsURL, {
-    method: "POST",
-    body: resultToSubmit,
-    mode: "cors",
-    headers: {
-      "Content-Type": "application/json"
-    }
-  })
-    .then(response => {
-      if (response.ok) {
-        alert(`Data submitted successfully`);
-      } else {
-        throw new Error(`Something went wrong, please try again`);
+  try {
+    const response = await fetch(resultsURL, {
+      method: "POST",
+      body: resultToSubmit,
+      mode: "cors",
+      headers: {
+        "Content-Type": "application/json"
       }
-    })
-    .catch(error => {
-      alert(error.message);
     });
+    if (response.ok) {
+      alert(`Data submitted successfully`);
+    } else {
+      throw new Error(`Something went wrong, please try again`);
+    }
+  } catch (error) {
+    alert(error.message);
+  }
 };
 
 // Async/Await
