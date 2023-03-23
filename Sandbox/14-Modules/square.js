@@ -1,0 +1,1 @@
+export const SQarea = (len) => len * len;
