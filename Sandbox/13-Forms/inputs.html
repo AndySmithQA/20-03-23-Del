@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function addition(){
+            if (t1.value == ""){
+                alert("Number 1 is empty")
+            } else {
+            t3.value = parseInt(t1.value) + parseInt(t2.value)
+            }
+        }
+
+    </script>
+</head>
+<body>
+    First Number:
+    <input type="text" id="t1" size="4" maxlength="4" />
+    Second Number:
+    <input type="text" id="t2" size="4" />
+    <br>
+    <input type="button" value="Click Me" onclick="addition()">
+    <br>
+    Result:
+    <output id="t3"></output>
+</body>
+</html>
