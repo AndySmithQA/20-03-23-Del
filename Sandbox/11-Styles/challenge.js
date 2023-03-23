@@ -33,6 +33,7 @@ function tnrToArial() {
     console.log(tnrParagraph.style.fontFamily);
     console.log(getComputedStyle(tnrParagraph).fontFamily);
     tnrParagraph.textContent = tnrParagraph.textContent.replace("Times New Roman", "Arial");
+    greenParagraph.textContent = 'new Text'
 }
 console.log(tnrParagraph.style.fontFamily);
 console.log(getComputedStyle(tnrParagraph).fontFamily);
